@@ -9,7 +9,6 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
-// users = [];
 connections = [];
 
 io.sockets.on("connection", function (socket) {
